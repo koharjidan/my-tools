@@ -1,11 +1,13 @@
 #!/bin/sh
-
-echo "Install tools to $HOME/.local/bin"
+INSDIR="$HOME/.local/bin"
+echo "Install tools to $INSDIR"
 
 chmod +x git/sync.sh
 chmod +x git/run-sync.sh
 chmod +x git/github-sync.sh
+chmod +x php/composer.phar
 
-ln -sf `pwd`/git/sync.sh $HOME/.local/bin/sync-git
-ln -sf `pwd`/git/run-sync.sh $HOME/.local/bin/run-sync
-ln -sf `pwd`/git/github-sync.sh $HOME/.local/bin/github-sync
+ln -sf `pwd`/git/sync.sh $INSDIR/sync-git
+ln -sf `pwd`/git/run-sync.sh $INSDIR/run-sync
+ln -sf `pwd`/git/github-sync.sh $INSDIR/github-sync
+ln -sf `pwd`/php/composer.phar $INSDIR/composer

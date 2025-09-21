@@ -1,5 +1,5 @@
 #!/bin/sh
 
-echo "Remove tools in $HOME/bin"
+echo "Remove tools in $HOME/.local/bin"
 
-rm $HOME/bin/*
+rm $HOME/.local/bin/*
